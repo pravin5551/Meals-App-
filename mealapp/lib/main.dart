@@ -70,6 +70,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'DeliMeals',
       theme: ThemeData(
         primarySwatch: Colors.pink,
@@ -105,7 +106,7 @@ class _MyAppState extends State<MyApp> {
         // } else if (settings.name == '/something-else') {
         //   return ...;
         // }
-        // return MaterialPageRoute(builder: (ctx) => CategoriesScreen(),);
+        return MaterialPageRoute(builder: (ctx) => CategoriesScreen(),);
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(

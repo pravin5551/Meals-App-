@@ -11,6 +11,7 @@ class MealItem extends StatelessWidget {
   final Complexity complexity;
   final Affordability affordability;
 
+
   MealItem(
       {@required this.id,
       @required this.title,
@@ -56,8 +57,7 @@ class MealItem extends StatelessWidget {
         .pushNamed(
       MealDetailScreen.routeName,
       arguments: id,
-    )
-        .then((result) {
+    ).then((result) {
       if (result != null) {
         // removeItem(result);
       }
@@ -113,6 +113,7 @@ class MealItem extends StatelessWidget {
                 )
               ],
             ),
+
             Padding(
               padding: EdgeInsets.all(20),
               child: Row(

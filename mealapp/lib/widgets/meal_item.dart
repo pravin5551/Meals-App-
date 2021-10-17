@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../screens/meal_detail_screen.dart';
 import '../models/meal.dart';
-
+//Meal Item
 class MealItem extends StatelessWidget {
   final String id;
   final String title;

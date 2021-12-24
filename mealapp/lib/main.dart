@@ -71,20 +71,20 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'DeliMeals',
+      // title: 'DeliMeals',
       theme: ThemeData(
         primarySwatch: Colors.pink,
         accentColor: Colors.amber,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
-            body1: TextStyle(
+            bodyText1: TextStyle(
               color: Color.fromRGBO(20, 51, 51, 1),
             ),
-            body2: TextStyle(
+            bodyText2: TextStyle(
               color: Color.fromRGBO(20, 51, 51, 1),
             ),
-            title: TextStyle(
+            subtitle1: TextStyle(
               fontSize: 20,
               fontFamily: 'RobotoCondensed',
               fontWeight: FontWeight.bold,
